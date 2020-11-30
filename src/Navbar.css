@@ -1,0 +1,58 @@
+.navbar {
+    background-color: #111111;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar--light {
+    background-color: #eeeeee;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__avatar {
+    margin-left: 11px;
+    transition: transform 551ms ease !important;
+}
+
+.navbar__avatar:hover {
+    transform: scale(1.21);
+    cursor: pointer;
+}
+
+.navbar__heading {
+    color: lightgray;
+}
+
+.navbar__heading--light {
+    color: #232323;
+}
+
+.navbar__modeIcon {
+    color: lightgray;
+    margin-right: 11px;
+    cursor: pointer;
+    transition: color 521ms ease-in-out , transform 521ms ease-in-out !important;
+}
+
+.navbar__modeIcon--light {
+    color: #222222;
+    margin-right: 11px;
+    cursor: pointer;
+    transition: color 521ms ease-in-out , transform 521ms ease-in-out !important;
+}
+
+.navbar__modeIcon:hover {
+    color: white;
+    transform: scale(1.21) rotate(180deg);
+}
+
+.navbar__modeIcon--light:hover {
+    color: black;
+    transform: scale(1.21) rotate(180deg);
+}
+

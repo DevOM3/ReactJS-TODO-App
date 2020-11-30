@@ -1,0 +1,119 @@
+.login {
+    display: grid;
+    place-items: center;
+    background: #111111;
+    flex: 1;
+}
+
+.login--light {
+    display: grid;
+    place-items: center;
+    background: #eeeeee;
+    flex: 1;
+}
+
+.login__modeIcon {
+    font-size: 51px !important;
+    color: lightgray;
+    cursor: pointer;
+    transition: color 521ms ease-in-out , transform 521ms ease-in-out !important;
+}
+
+.login__modeIcon--light {
+    font-size: 51px !important;
+    color: #222222;
+    cursor: pointer;
+    transition: color 521ms ease-in-out , transform 521ms ease-in-out !important;
+}
+
+.login__modeIcon:hover {
+    color: white;
+    transform: scale(1.21) rotate(180deg);
+}
+
+.login__modeIcon--light:hover {
+    color: black;
+    transform: scale(1.21) rotate(180deg);
+}
+
+.login > .MuiButtonBase-root, .login--light > .MuiButtonBase-root {
+    transition: box-shadow 5s ease;
+}
+
+.login > .MuiButtonBase-root:hover {
+    box-shadow: 0px 0px 221px 171px white;
+}
+
+.login--light > .MuiButtonBase-root:hover {
+    box-shadow: 0px 0px 421px 411px;
+}
+
+.login__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    transition: box-shadow 751ms ease, border 751ms ease-in-out, background 751ms ease, transform 1s ease;
+    background: #111111;
+}
+
+.login__container--light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    transition: box-shadow 751ms ease, border 751ms ease-in-out, background 751ms ease, transform 1s ease;
+    background: #eeeeee;
+}
+
+.login__container:hover {
+    border: 1px solid white;
+    box-shadow: 0px 0px 11px 11px;
+    background: #222222;
+    transform: scale(1.11);
+}
+
+.login__container--light:hover {
+    border: 1px solid gray;
+    box-shadow: 0px 0px 11px 4px;
+    background: #cccccc;
+    transform: scale(1.11);
+}
+
+.login__title {
+    color: white;
+    margin-bottom: 21px;
+}
+
+.login__title--light {
+    color: #121212;
+    margin-bottom: 21px;
+}
+
+.login__button {
+    background-color: rgb(97, 87, 115) !important;
+    border: 1px solid rgb(85, 63, 126) !important;
+    transition: color 521ms ease-in-out, border-color  521ms ease-in-out, background-color  521ms ease-in-out, box-shadow 521ms ease-in-out, font-weight 951ms ease !important;
+}
+
+.login__button--light {
+    background-color: rgb(119, 91, 170) !important;
+    border: 1px solid rgb(85, 63, 126) !important;
+    transition: color 521ms ease-in-out, border-color  521ms ease-in-out, background-color  521ms ease-in-out, box-shadow 521ms ease-in-out, font-weight 951ms ease !important;
+}
+
+.login__button:hover {
+    border-color: lightgray !important;
+    background-color: black !important;
+    color: rgb(97, 87, 115);
+    font-weight: bold !important;
+    box-shadow: 0px 0px 5px 5px rgb(97, 87, 115) ;
+}
+
+.login__button--light:hover {
+    border-color: rgb(0, 0, 0) !important;
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(132, 90, 209);
+    font-weight: bold !important;
+    box-shadow: 0px 0px 5px 5px rgb(116, 41, 255) ;
+}

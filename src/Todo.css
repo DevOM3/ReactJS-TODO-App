@@ -1,0 +1,89 @@
+.todo {
+    display: flex;
+    align-items: center;
+    width: 75vw;
+    background-color: rgb(25, 25, 25);
+    padding: 15px;
+    margin: 7px;
+    border: 1px solid lightgray;
+    border-radius: 11px;
+    max-width: 951px;
+}
+
+.todo--light {
+    display: flex;
+    align-items: center;
+    width: 75vw;
+    background-color: rgb(230, 230, 230);
+    padding: 15px;
+    margin: 7px;
+    border: 1px solid rgb(44, 44, 44);
+    border-radius: 11px;
+    max-width: 951px;
+}
+
+@media(max-width: 340px) {
+    .todo, .todo--light {
+        width: 85vw;
+    }
+}
+
+.todo__checkbox {
+    margin-right: 5px;
+    transform: scale(1.11);
+    transition: transform 321ms ease-in-out;
+}
+
+.todo__checkbox:hover {
+    transform: scale(1.40) rotate(360deg);
+}
+
+.todo__text {
+    flex: 1;
+    margin: 7px;
+    font-weight: 600;
+    color: rgb(217, 217, 217);
+}
+
+.todo__text--light {
+    flex: 1;
+    margin: 7px;
+    font-weight: 600;
+    color: rgb(38, 38, 38);
+}
+
+.todo__options {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid gray;
+}
+
+.todo__editIcon {
+    color: #dddddd;
+    transition: transform 511ms ease-in-out, color 511ms ease-in-out !important;
+}
+
+.todo__editIcon--light {
+    color: #444444;
+    transition: transform 511ms ease-in-out, color 511ms ease-in-out !important;
+}
+
+.todo__editIcon:hover {
+    color: white;
+    transform: scale(1.30) rotate3d(1, 1, 0, 360deg);
+}
+
+.todo__editIcon--light:hover {
+    color: black;
+    transform: scale(1.30) rotate3d(1, 1, 0, 360deg);
+}
+
+.todo__deleteIcon {
+    color: rgba(255, 0, 0, 0.8);
+    transition: transform 511ms ease-in-out, color 511ms ease-in-out !important;
+}
+
+.todo__deleteIcon:hover {
+    color: rgba(255, 0, 0, 1);
+    transform: scale(1.30) rotateY(180deg);
+}
